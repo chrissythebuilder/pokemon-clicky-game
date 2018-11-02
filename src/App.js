@@ -52,8 +52,8 @@ class App extends Component {
         this.setState({
           top: currentScore
         })
-        console.log(this.state.top);
-        console.log(currentScore)
+        // console.log(this.state.top);
+        // console.log(currentScore)
       }
 
     }
