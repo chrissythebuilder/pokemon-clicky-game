@@ -4,7 +4,7 @@ import "./Header.css";
 const Header = props => (
     <nav className="header">
         <ul>
-            <li className = "name">{props.title} </li>
+            <li className = "name">{props.header} </li>
 
             <li className = "game-message">
             {props.message}</li>

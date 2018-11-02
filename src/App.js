@@ -64,12 +64,16 @@ class App extends Component {
     return (
       <Wrapper>
         <Header
-          title="Pokemon Clicky Game"
+          header="Pokemon Memory Game"
           message={this.state.message}
           current={this.state.current}
           top={this.state.top}
         />
-        <Title>Gotta catch 'em all!</Title>
+        {/* <Title>Gotta catch 'em all!</Title> */}
+        <Title
+          title="Gotta catch 'em all!"
+          rules="You must not repeat a pokemon card in the same round"
+        />
         {this.state.images.map(pokemon => (
         <GameCard
             imageShuffle={()=> this.imageShuffleFn(pokemon.id)}

@@ -2,7 +2,10 @@ import React from "react";
 import "./Title.css";
 
 const Title = props => (
- <h1 className="title">{props.children}</h1>
+    <div className = "title-description">
+        <h1 className="title">{props.title}</h1>
+        <p className ="rules">{props.rules}</p>
+    </div>
 );
 
 
